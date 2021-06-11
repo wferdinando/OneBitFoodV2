@@ -1,4 +1,4 @@
-import { Row, Col, Card} from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 import Image from 'next/image'
 import { FaStar } from 'react-icons/fa';
 import toCurrency from '../../../services/toCurrency';

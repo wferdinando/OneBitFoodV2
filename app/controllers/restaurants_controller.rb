@@ -8,15 +8,13 @@ class RestaurantsController < ApplicationController
     filter_by_category if params[:category]
   end
 
-  def show
-  end
+  def show; end
 
   private
 
   def set_restaurant
     @restaurant = Restaurant.find(params[:id])
   end
-
 
   def filter_by_query
     @restaurants = @restaurants.ransack(name_or_description_cont: params[:q]).result
@@ -31,5 +29,4 @@ class RestaurantsController < ApplicationController
       r.category.title == params[:category]
     end
   end
-
 end

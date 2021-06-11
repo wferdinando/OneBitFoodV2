@@ -2,6 +2,7 @@ class Order < ApplicationRecord
   before_validation :set_price
   belongs_to :restaurant
   has_many :order_products
+  
 
   validates :name, :phone_number, :total_value, :city, :neighborhood, :street, :number,  presence: true
 
